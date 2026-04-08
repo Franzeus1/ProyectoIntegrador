@@ -6,35 +6,98 @@
     <title>proyecto Integrador</title>
 </head>
 <body>
-    <header><h1>Portafolio modelados 3d</h1></header>
+    <header>
+        <fieldset>
+            <h1>Portafolio modelados 3d</h1>
+        <label>Modelos 3d realizados con:</label>
+        <p>Blender</p>
+        <!--Agregar imagen del logo de blender-->
+        
+        <p>Z-brush</p>
+        <!--Agregar imagen del logo de zbrush-->
+
+        <p>Substas painter<p>
+        <!--Agregar imagen del substane-->
+        </fieldset>
+        
+    </header>
     
     <nav>
-          <h2> Modelos 3d</h2>
-        <li> 
-            <ul><a href="#personajes">Personajes</a></ul>
-            <ul><a href="">Barcos pirata</a></ul>
-            <ul><a href="">Escenarios</a></ul>
-            <ul><a href="">Estructuras</a></ul>
-            <ul><a href="">Elementos</a></ul>
-        </li>
+        <h2> Modelos 3d</h2>
+       
+        <ul> <!--listado modelos-->
+            <li><a href="#personajes">Personajes</a>
+                <ul>
+                    <li><a href="#duende">Duende</a></li>
+                    <li><a href="#mono">Mono</a></li>
+                </ul>
+            </li>
+            <li><a href="#barco">Barcos pirata</a>
+                <ul>
+                    <li><a href="#barco1">Barco 1</a></li>
+                    <li></li>
+                </ul>
+            </li>
+            <li><a href="">Escenarios</a></li>
+            <li><a href="">Estructuras</a></li>
+            <li><a href="">Elementos</a></li>
+        </ul>
+
+        <p><a href="#videos">Videos de produccion</a></p>
+        <p><a href="#informacionpersonal">Informacion Personal</a></p>
         
     </nav>
-    <main>
+    <main><!--Modelos 3d-->
         <section id="personajes">
-        <article>
+        
         <h3>Personajes</h3>
-        <p>Duende navideño</p>
-        <img src="./assets/Fotos modelos 3d/Captura de pantalla (107).png" alt="Duende" height="200">
-        <p>Mono</p>
-        <img src="./assets/Fotos modelos 3d/mono.png" alt="Mono" height="200">
-      </article>
-      <article></article>
+        <article id="duende">
+            <p>Duende navideño</p>
+            <img src="./assets/Fotos modelos 3d/Captura de pantalla (107).png" alt="Duende" height="200">
+            
+        </article>
+        <article id="mono">
+            <p>Mono</p>
+            <img src="./assets/Fotos modelos 3d/mono.png" alt="Mono" height="200">
+        </article>
+        </section>
+
+        <section id="barco">
+            <article id="barco1">
+               <h3>Barcos</h3>
+               <p>Barco 1</p>
+               <img src="./assets/Fotos modelos 3d/Captura de pantalla (112).png" alt="Barco 1" height="200"> 
+            </article>
+        </section>
+
+        <section id="videos">
+            <h2>Videos de produccion</h2>
+            <!--Agregar videos de produccion-->
         </section>
       
 
     </main>
     <footer>
+        <section id="informacionpersonal">
+            <h3>Informacion personal</h3> 
+        </section>
+        <table border="1">
+            <tr>
+                <th>Nombre</th>
+                <th>Telefono</th>
+                <th>Correo</th>
+            </tr>
+            <tr>
+                <td>Diaz Goichi Juan Francisco</td>
+                <td><a href="https://wa.me/543482547723" target="_blank"><button>Whatsapp</button></a></td>
+                <td><a href="mailto:juanfrandiaz87@gmail.com"><button>Correo</button></a></td>
+            </tr>
+            <tr>
+                
+            </tr>
 
+        </table>
+        
     </footer>
 </body>
 </html>
