@@ -5,7 +5,7 @@ Este proyecto es una página web creada con HTML que sirve como portafolios para
 ## Contenido 
 - Página principal  
 - Imágenes 
--Descripciones
+- Descripciones
 - Videos 
 - Datos y contacto.  
 ## Autor Tu nombre
