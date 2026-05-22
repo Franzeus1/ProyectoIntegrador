@@ -2,30 +2,36 @@
 <html lang="en">
 <head>
     <link rel="icon" href="./assets/LogoUTN-vertical-negro-2.png">
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>proyecto Integrador</title>
-</head>
-<body style="background-color: lightgray;">
-    <header>
-        
-        
-        <fieldset>
-            <a id="inicio"><h1>Portafolio modelados 3d</h1></a>
-        <h2>Modelos 3d realizados con:</h2>
-        <p>Blender</p>
-        <img src="./assets/img extras/Blender_logo_no_text.svg.png" alt="logo blender" height="80">
-        <!--Agregar imagen del logo de blender-->
-        
-        <p>Zbrush</p>
-        <img src="./assets/img extras/ZBrush-Logo.png" alt="logo zbrush" height="80">
-        <!--Agregar imagen del logo de zbrush-->
 
-        <p>Adobe Substance 3D Painter</p>
-        <img src="./assets/img extras/substance.png" alt="logo Adobe" height="80">
-        <!--Agregar imagen del substane-->
-        </fieldset>
-        
+</head>
+<body>
+    <header>  
+        <div class="cabeza">
+            <a id="inicio"><h1>Portafolio modelados 3d</h1></a>
+            <h2>Modelos 3d realizados con:</h2>
+            <div class="container_herram">
+                <div class="herramientas">
+                    <p>Blender</p>
+                    <img class="logo_herram" src="./assets/img extras/Blender_logo_no_text.svg.png" alt="logo blender" >
+                    <!--Agregar imagen del logo de blender-->
+                </div>
+                <div class="herramientas">
+                    <p>Zbrush</p>
+                    <img  class="logo_herram" src="./assets/img extras/ZBrush-Logo.png" alt="logo zbrush" >
+                    <!--Agregar imagen del logo de zbrush-->
+                </div>
+                <div class="herramientas">
+                    <p>Adobe Substance 3D Painter</p>
+                    <img class="logo_herram" src="./assets/img extras/substance.png" alt="logo Adobe" >
+                    <!--Agregar imagen del substane-->
+                </div>
+            </div>
+        </div>
+ 
     </header>
     
     <nav>
@@ -45,17 +51,16 @@
             <li><p><a href="#contacto">Contacto</a></p></li>
         </ul>
         
-        
-        
     </nav>
+
     <main><!--Modelos 3d-->
         <section id="personajes">
-        <center>
+    
             <h2>Personajes</h2>
             
             <h4>Duende navideño</h4>
             <img src="./assets/Fotos modelos 3d/Captura de pantalla (107).png" alt="Duende" height="200">
-            <article align="center" style="border: 1px solid black; width: 300px; padding: 10px;">
+            <article >
                 <h5>Descripcion</h5>
                 <p>Modelo estilizado de un duende navideño con detalles simples y proporciones caricaturescas.</p>
                 <h5>Detalles</h5>
@@ -65,7 +70,7 @@
             
             <h4>Mono</h4>
             <img src="./assets/Fotos modelos 3d/mono.png" alt="Mono" height="200">
-            <article align="center" style="border: 1px solid black; width: 300px; padding: 10px;">
+            <article >
                 <h5>Descripcion</h5>
                 <p>Modelo de un mono con rasgos humanoides con detalles simples de pintura y proporciones humanas.</p>
                 <h5>Detalles</h5>
@@ -76,7 +81,7 @@
             
             <h4>Oso</h4>
             <img src="assets/Fotos modelos 3d/Captura de pantalla (109).png" alt="Oso" height="200">
-            <article align="center" style="border: 1px solid black; width: 300px; padding: 10px;">
+            <article >
                 <h5>Descripcion</h5>
                 <p>Figura basica de oso con enfoque en volumen y formas simples.</p>
                 <h5>Detalles</h5>
@@ -86,7 +91,7 @@
             
             <h4>Krampus</h4>
             <img src="./assets/Fotos modelos 3d/Captura de pantalla (108).png" alt="Krampus" height="200">
-            <article align="center" style="border: 1px solid black; width: 300px; padding: 10px;">
+            <article >
                 <h5>Descripcion</h5>
                 <p>Modelo de un ser mitologico y aplicando fisicas de tela para su ropa</p>
                 <h5>Detalles</h5>
@@ -96,7 +101,7 @@
             
             <h4>Galleta de jengibre</h4>
             <img src="./assets/Fotos modelos 3d/Captura de pantalla (110).png" alt="Galleta" height="250">
-            <article align="center" style="border: 1px solid black; width: 300px; padding: 10px;">
+            <article >
                 <h5>Descripcion</h5>
                 <p>Modelo de una galleta pensado para escenas temáticas</p>
                 <h5>Detalles</h5>
@@ -105,7 +110,7 @@
             
             <h4>Pajaro</h4>
             <img src="./assets/Fotos modelos 3d/pajaroNpc.png" alt="Pajaro" height="200">
-            <article align="center" style="border: 1px solid black; width: 300px; padding: 10px;">
+            <article >
                 <h5>Descripcion</h5>
                 <p>Modelo de un pajaro humanoide</p>
                 <h5>Detalles</h5>
@@ -113,13 +118,12 @@
             </article>
             
             </section>
-        
-        </center>
         <br>
+        
 
         <section id="barcos">
             
-            <center>
+            
 
                 <h2>Barcos</h2>
                 <h4>Barco 1</h4>
@@ -130,7 +134,7 @@
                 <h4>Barco 2</h4>
                 <img src="./assets/Fotos modelos 3d/barco3.png" alt="Barco 3" height="200">
 
-                <article align="center" style="border: 1px solid black; width: 300px; padding: 10px;">
+                <article >
                             <h5>Descripcion</h5>
                             <p>Modelo de un Barco pirata con escenarios</p>
                             <h5>Detalles</h5>
@@ -144,7 +148,7 @@
                 <video controls height="250">
                     <source src="./assets/videos/video_barco0001-0250.mp4" type="video/mp4">
                 </video>
-            </center>
+            
                
             
         </section>
@@ -156,7 +160,7 @@
             </video>
             <!--Agregar videos de produccion-->
         </section>
-        <center>
+        
             <section id="contacto">
             <fieldset>
                 <legend><h2>Contacto</h2> </legend>
@@ -177,13 +181,13 @@
             
             </section>
 
-        </center>
+        
         
       
 
     </main>
     <footer>
-        <center>
+        
             <section id="informacionpersonal">
             
             
@@ -208,7 +212,7 @@
 
             <button><a href="#inicio">inicio</a></button>
 
-        </center>
+        
         
         
     </footer>
