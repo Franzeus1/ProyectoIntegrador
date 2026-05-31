@@ -182,8 +182,67 @@ main h2{
     margin: 10px auto;
 }
 /* footer*/
+.tabla{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+table{
+    border-collapse: collapse;
+    width: auto;
+    text-align: center;
+}
 
+th, td{
+    border: 3px solid black;
+    padding: 10px;
+    background-color: #d9b4db;
+}
 
+th{
+    background-color: #d9b4db;
+}
 
+.tabla button{
+    background-color: #621A78;
+    transition: transform 0.4s ease;
+    color: var(--color-texto);
+}
+.tabla button:hover{
+    transform: scale(1.1);
+    background-color: #8323A1;
+}
 
+.boton-inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+    padding: 12px;
+
+    background-color: #8323A1;
+    border: none;
+    border-radius: 5px;
+    margin: 20px auto;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boton-inicio a{
+    text-decoration: none;
+    color: var(--color-texto);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.boton-inicio:hover{
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    background-color: #d9b4db;
+    
+}
+/*fin footer*/
+
+/* agregar escalas para diferentes tamaños de pantalla*/
 

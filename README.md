@@ -16,6 +16,7 @@ Este proyecto es una página web creada con HTML que sirve como portafolios para
 - Actualizacion del codigo html.
 - Mejora en paleta de colores.
 - Contactos diseño y mejora.  
+- Diseño del footer.
 ## Autor Tu nombre
 - Diaz Goichi Juan Francisco
 
