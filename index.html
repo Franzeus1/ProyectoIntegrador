@@ -162,30 +162,35 @@
                     </div>
         </section>
 
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <div class="formulario">
                 
-                
+                <form id="form_contact" method="post" >
 
-        
-        
-            <section id="contacto">
-                <fieldset>
-                    <legend><h2>Contacto</h2> </legend>
-                    <form>
-                    <label>Nombre:</label>
-                    <input type="text">
+                <label>Nombre:</label>
+                <input type="text" name="nombre" placeholder="Nombre" required>
 
-                    <label>Email:</label>
-                    <input type="email">
+                <label>Email:</label>
+                <input type="email" name="correo" placeholder="Correo" required>
 
-                    <label>Mensaje:</label>
-                    <textarea></textarea>
+                <label>Mensaje:</label>
+                <textarea name="mensaje" placeholder="Escriba su mensaje aquí..." required></textarea>
 
-                    <button>Enviar</button>
+                <button type="submit">Enviar</button>
+
                 </form>
+            </div>
+        </section>
+        <script>
+                document.getElementById("form_contact").addEventListener("submit", function(e) {
+                e.preventDefault(); // evita que se envíe realmente
 
-                </fieldset>
-            
-            </section>
+                    alert("Mensaje enviado correctamente");
+
+                    this.reset(); // limpia los campos
+                });
+        </script>
 
         
         

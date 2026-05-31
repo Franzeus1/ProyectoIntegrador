@@ -1,5 +1,5 @@
 :root{
-    --color-principal: rgb(170, 208, 221);
+    --color-principal: #460C54;
     --color-texto: white;
     --tamanio-texto:15px;
     --tamanio-texto-titulo: 35px;
@@ -12,7 +12,7 @@ body{
     background-color: var(--color-principal);
 }
 .cabeza{
-    background-color: cadetblue;
+    background-color: #621A78;
     color: var(--color-texto);
     padding: 15px;
     font-size: var(--tamanio-texto-titulo);
@@ -45,7 +45,8 @@ body{
 /* Header*/
 /* Nav*/
 .navegador{
-    background-color: rgb(111, 192, 192);
+    background-color: #8323A1;
+    color: var(--color-texto);
     display: flex;
     font-size: (var(--tamanio-texto));
     justify-content: center;
@@ -68,17 +69,20 @@ body{
 .link{
     display: inline-block;
     text-decoration: none;
-    background: rgb(130, 116, 194);
+    background-color: var(--color-principal);
     width: 100% auto;
     border-radius: 10px;
     padding: 8px 12px;
+    color: var(--color-texto);
+    
 }
 .grupo h2{
     margin: 0;
 }
 
 .link:hover{
-    background-color: rgb(127, 255, 170);
+    
+    background: rgb(130, 116, 194);
 }
 /* nav*/
 
@@ -86,6 +90,7 @@ body{
 main h2{
     font-size: var(--tamanio-texto-titulo);
     text-align: center;
+    color: var(--color-texto);
 }
 #personajes{
     display: grid;
@@ -95,7 +100,7 @@ main h2{
 }
 
 .duende, .mono, .oso, .krampus, .galleta, .pajaro{
-    background: white;
+    background: #ECD3ED;
     text-align: center;
     border: 2px solid black;
     width: 80%;
@@ -141,5 +146,44 @@ main h2{
     height: 250px;
     max-width: 100%;
 }
+/* main contacto*/
+
+#contacto{
+    background: #8323A1;
+}
+#form_contact{
+    
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+}
+
+#form_contact input{
+    height: 10px;
+    padding: 10px;
+    text-align: center;
+
+}
+#form_contact textarea{
+    resize: none;
+}
+
+.formulario{
+    border: 2px solid black;
+    background-color: #621A78;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+#contacto h2{
+    padding: 15px;
+    margin: 10px auto;
+}
+/* footer*/
+
+
+
 
 
