@@ -6,10 +6,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>proyecto Integrador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap" rel="stylesheet">
 
 </head>
 <body>
-    <header>  
+    <header> 
+         
         <div class="cabeza">
             <a id="inicio"><h1>Portafolio modelados 3d</h1></a>
             <h2>Modelos 3d realizados con:</h2>
@@ -35,23 +39,26 @@
     </header>
     
     <nav class="navegador">
-        <h2> Modelos 3d:</h2>
+        
        <div class="grupo">
+            <h2> Modelos 3d:</h2>
             <ul> <!--listado modelos-->
                 <li ><a href="#personajes" class="link">Personajes</a>
                 </li>
                 <li><a href="#barcos" class="link">Barcos pirata</a>  
                 </li>
             </ul>
+            
        </div>
         
        <div class="grupo">    
-            <p><a href="#videos" class="link">Videos de produccion</a></p>
+            
             <h2>Contacto:</h2>
             <ul>
                 <li><a href="#informacionpersonal" class="link">Informacion Personal</a></li>
                 <li><a href="#contacto" class="link">Contacto</a></li>
             </ul>
+            <p><a href="#videos" class="link">Videos de produccion</a></p>
     
        </div >
         
@@ -147,9 +154,10 @@
                                 <p>Modelado, pintado y animado en Blender </p>           
                     </article> <br>
                     </div>
+                    
                     <div class="videos">
                         <h4>Videos</h4>
-                        <iframe width="501" height="205" src="https://www.youtube.com/embed/_68rktr7Zzw" title="DevBlog#2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe class="mp4" src="https://www.youtube.com/embed/_68rktr7Zzw" title="DevBlog#2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <h4>Animacion final</h4>
                         <video controls class="mp4" >
                         <source  src="./assets/videos/video_barco0001-0250.mp4" type="video/mp4">
@@ -184,11 +192,11 @@
         </section>
         <script>
                 document.getElementById("form_contact").addEventListener("submit", function(e) {
-                e.preventDefault(); // evita que se envíe realmente
+                e.preventDefault(); 
 
                     alert("Mensaje enviado correctamente");
 
-                    this.reset(); // limpia los campos
+                    this.reset(); // limpiar los campos
                 });
         </script>
 
@@ -215,14 +223,12 @@
 
                 </table>
 
-                
-            
             </section>
             
 
         </div>
         <br>
-        <button class="boton-inicio"><a href="#inicio">inicio</a></button>
+        <button class="boton-inicio"><a href="#inicio">INICIO</a></button>
         
     </footer>
 </body>

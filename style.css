@@ -3,12 +3,15 @@
     --color-texto: white;
     --tamanio-texto:15px;
     --tamanio-texto-titulo: 35px;
+    --fuente-principal: "Momo Trust Display", sans-serif;
 }
+
+
 
 /* Header*/
 body{
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fuente-principal);
     background-color: var(--color-principal);
 }
 .cabeza{
@@ -28,7 +31,7 @@ body{
 }
 
 .herramientas{
-    
+    display: flex;
     flex-direction:column;
     align-items:center;
     font-size: 20px;
@@ -48,13 +51,15 @@ body{
     background-color: #8323A1;
     color: var(--color-texto);
     display: flex;
-    font-size: (var(--tamanio-texto));
+    flex-wrap: wrap;
+    font-size: var(--tamanio-texto);
     justify-content: center;
     gap: 50px;
 }
 
 .grupo{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 50px;
     
@@ -62,6 +67,7 @@ body{
 
 .grupo ul{
     display: flex;
+    
     gap: 25px;
     padding: 0;
     list-style: none;
@@ -70,7 +76,7 @@ body{
     display: inline-block;
     text-decoration: none;
     background-color: var(--color-principal);
-    width: 100% auto;
+    width: auto;
     border-radius: 10px;
     padding: 8px 12px;
     color: var(--color-texto);
@@ -97,17 +103,24 @@ main h2{
     grid-template-columns: 1fr;
     justify-items: center;
     gap: 10px;
+    
+}
+#personajes h4,
+#personajes h5{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    
 }
 
 .duende, .mono, .oso, .krampus, .galleta, .pajaro{
     background: #ECD3ED;
     text-align: center;
-    border: 2px solid black;
+    border: 2px solid #ECD3ED;
     width: 80%;
     padding: 15px;
     border-radius: 10px;
     box-sizing: border-box;
-    box-shadow: 5px 3px  black;
+    box-shadow: 5px 5px  #c279d8;
 }
 
 .modelos{
@@ -123,34 +136,32 @@ main h2{
 }
 
 #barcos{
-     display: grid;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     gap: 10px;
 }
 
 .barco, .videos{
-    background: white;
+    background: #ECD3ED;
     text-align: center;
-    border: 2px solid black;
+    border: 2px solid #ECD3ED;
     width: 92%;
     padding: 15px;
     border-radius: 10px;
     box-sizing: border-box;
-    box-shadow: 5px 3px  black;
+    box-shadow: 10px 10px  #c279d8;
     max-width: 100%;
 }
 
 
 .mp4{
-    height: 250px;
-    max-width: 100%;
+    height: 180px;
+    max-width: 90%;
 }
 /* main contacto*/
 
-#contacto{
-    background: #8323A1;
-}
+
 #form_contact{
     
     display: flex;
@@ -170,8 +181,8 @@ main h2{
 }
 
 .formulario{
-    border: 2px solid black;
-    background-color: #621A78;
+    border: 2px solid #c361e0;
+    background-color: #9127b1;
     border-radius: 10px;
     padding: 20px;
     max-width: 800px;
@@ -196,11 +207,11 @@ table{
 th, td{
     border: 3px solid black;
     padding: 10px;
-    background-color: #d9b4db;
+    background-color: #ECD3ED;
 }
 
 th{
-    background-color: #d9b4db;
+    background-color: #ECD3ED;
 }
 
 .tabla button{
@@ -244,5 +255,89 @@ th{
 }
 /*fin footer*/
 
-/* agregar escalas para diferentes tamaños de pantalla*/
+/* escalas para diferentes tamaños de pantalla*/
+
+@media (max-width: 768px){
+
+    .grupo{
+        flex-direction: column;
+        flex-grow: 1;
+        gap: 10px;
+    }
+
+    .grupo ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
+    #barcos{
+        grid-template-columns: 1fr;
+    }
+
+    #form_contact{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cabeza{
+        font-size: 25px;
+    }
+
+    main h2{
+        font-size: 25px;
+    }
+
+    .logo_herram{
+        height: 60px;
+    }
+}
+@media (max-width: 480px){
+    .navegador{
+        padding: 10px;
+    }
+    .grupo ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+   
+    .link{
+        width: 100px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .cabeza, main h2{
+        font-size: 20px;
+    }
+    #form_contact input,
+    #form_contact textarea{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .logo_herram{
+        height: 50px;
+    }
+
+    .modelos{
+        height: 140px;
+    }
+
+    .modelos:hover{
+        transform: scale(1.1);
+    }
+
+    .mp4{
+        height: 150px;
+    }
+    .barco{
+        width: 80%;
+    }
+    .formulario{
+        width: 80%;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+}
 
