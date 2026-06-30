@@ -67,7 +67,6 @@ body{
 
 .grupo ul{
     display: flex;
-    
     gap: 25px;
     padding: 0;
     list-style: none;
