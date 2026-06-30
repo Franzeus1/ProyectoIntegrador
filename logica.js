@@ -35,30 +35,36 @@ document
     .addEventListener("submit", validarFormulario);
 //fin formulario
 //buscar
+document.getElementById("btnBuscar").addEventListener("click", buscarModelo);
 
 function buscarModelo() {
 
-    const texto = document.getElementById("buscador").value.toLowerCase();
+    try {
+        const texto = document.getElementById("buscador").value.toLowerCase().trim();
 
-    const personajes = document.querySelectorAll("#personajes > div");
-
-    personajes.forEach(personaje => {
-
-        const nombre = personaje.querySelector("h4").textContent.toLowerCase();
-
-        if(nombre.includes(texto)){
-            personaje.style.display = "block";
-        }
-        else{
-            personaje.style.display = "none";
+        if (texto === "") {
+            throw new Error("Escribí un modelo para buscar");
         }
 
-    });
+        const existe = modelos.some(m => m.toLowerCase() === texto);
+
+        if (!existe) {
+            throw new Error("El modelo no existe en la lista");
+        }
+
+        const personajes = document.querySelectorAll("#personajes > div");
+
+        personajes.forEach(personaje => {
+            const nombre = personaje.querySelector("h4")?.textContent.toLowerCase() || "";
+
+            personaje.style.display = nombre.includes(texto) ? "" : "none";
+        });
+
+    } catch (error) {
+        console.error(error.message);
+        alert(error.message);
+    }
 }
-
-document
-    .getElementById("buscador")
-    .addEventListener("input", buscarModelo);
     //fin buscar
     //array modelos
     const modelos = [
