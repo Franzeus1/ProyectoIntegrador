@@ -19,6 +19,12 @@ Este proyecto es una página web creada con HTML que sirve como portafolios para
 - Diseño del footer.
 - Se agrego la fuente usando google fonts.
 - Se hizo responsive la pagina. 
+- Creacion de archivo Js.
+- Creacion de formulario que simula enviar un mensaje. 
+- Se agrego un input de busqueda que solo muestra la busqueda que se hizo. 
+- Se agrego una funcion con un array con los modelos, que al apretar un boton se muestra el array en pantalla. 
+- Se agrego una funcion para cambiar el tema de la pagina a modo claro con un check box. 
+
 ## Autor Tu nombre
 - Diaz Goichi Juan Francisco
 

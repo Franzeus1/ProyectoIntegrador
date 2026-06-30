@@ -14,6 +14,30 @@ body{
     font-family: var(--fuente-principal);
     background-color: var(--color-principal);
 }
+
+#buscador{
+    background-color:#c279d8;
+    color: var(--color-texto);
+    
+}
+
+#btnModelos {
+    background-color:#c084fc;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: var(--tamanio-texto);
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#btnModelos:hover {
+    background-color: #c084fc;
+    transform: scale(1.05);
+}
+
 .cabeza{
     background-color: #621A78;
     color: var(--color-texto);
@@ -253,6 +277,82 @@ th{
     
 }
 /*fin footer*/
+/* MODO CLARO */
+
+.claro {
+    background-color: #f5f5f5;
+}
+
+.claro .cabeza {
+    background-color: #d9b4db;
+    color: #222;
+}
+
+.claro .navegador {
+    background-color: #e9d5ff;
+    color: #222;
+}
+
+.claro main h2 {
+    color: #222;
+}
+
+.claro .link {
+    background-color: #c084fc;
+    color: white;
+}
+
+.claro .link:hover {
+    background-color: #a855f7;
+}
+
+.claro .duende,
+.claro .mono,
+.claro .oso,
+.claro .krampus,
+.claro .galleta,
+.claro .pajaro,
+.claro .barco,
+.claro .videos {
+    background-color: white;
+    box-shadow: 5px 5px #d8b4fe;
+}
+
+.claro .formulario {
+    background-color: #e9d5ff;
+    border-color: #c084fc;
+}
+
+.claro th,
+.claro td {
+    background-color: white;
+}
+
+.claro .boton-inicio {
+    background-color: #c084fc;
+}
+
+.claro .boton-inicio:hover {
+    background-color: #a855f7;
+}
+
+.claro .tabla button {
+    background-color: #c084fc;
+}
+
+.claro .tabla button:hover {
+    background-color: #a855f7;
+}
+
+.claro #buscador {
+    background-color: white;
+    color: #222;
+}
+
+.claro #btnModelos {
+    background-color: #d8b4fe;
+    color: #222;
+}
 
 /* escalas para diferentes tamaños de pantalla*/
 
